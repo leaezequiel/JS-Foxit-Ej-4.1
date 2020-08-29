@@ -1,0 +1,138 @@
+//1. Realiza un programa para obtener el menor de 2 números ingresados
+var num1 = prompt ('Ingrese primer número');
+var num2 = prompt ('Ingrese segundo número');
+
+if(num1==num2){
+console.log('Números iguales.');
+} else if(num1>num2) {
+console.log('Primer numero '+num1+' menor que '+num2);
+} else {
+console.log('Segundo numero '+num2+' menor que '+num1);   
+}
+
+//2. Realizar un algoritmo que determine  si un número es par o impar
+var num3 = prompt ('Ingrese número y te diré si es par o impar');
+var num4=num3%2
+if(num4==1){
+    console.log('Número impar')
+alert ( "Número impar" )
+} else {
+    console.log('Número par')
+alert ( "Número par" )
+}
+
+//3. Declarar una variable que se llame ganeLaCarrera y asignarle el valor false. Mostrar por la terminal un mensaje que diga 'Ganaste'
+// si ganeLaCarrera es verdadero y 'Perdiste' si su valor es falso.    
+var ganeLaCarrera = false;
+if (ganeLaCarrera==false){
+    console.log('Perdiste :(');
+alert ( "Perdiste :(")
+} else {
+    console.log('Ganastete :)');    
+alert (Ganastete :))
+}
+
+//4. Declarar una variable que se llame posicionEnLaCarrera y asignarle el número 6. 
+//Mostrar por la terminal uno de los siguientes mensajes según la posición que salió el corredor:
+var posicionEnLaCarrera = 6
+if (posicionEnLaCarrera==1){
+    alert('FELICITACIONES, SALISTE 1RO')
+} else if (posicionEnLaCarrera==2){
+    alert('Te falto poquito para ganar')
+} else if(posicionEnLaCarrera==3){
+    alert('Sos un orgullo para tu familia')
+} else if (posicionEnLaCarrera>=4){
+    alert('Volve a tu casa')
+} else {
+    alert('No tires fruta')
+}
+
+
+//5. Repetir el ejercicio anterior pero usando un solo console.log en todo el programa.
+var posicionEnLaCarrera = 6
+if (posicionEnLaCarrera==1){
+    console.log('FELICITACIONES, SALISTE 1RO')
+} else if (posicionEnLaCarrera==2){
+    console.log('Te falto poquito para ganar')
+} else if(posicionEnLaCarrera==3){
+    console.log('Sos un orgullo para tu familia')
+} else if (posicionEnLaCarrera>=4){
+    console.log('Volve a tu casa')
+} else {
+    console.log('No tires fruta')
+}
+
+//6. Realizar un programa que calcule el importe total a abonar en una factura,
+// teniendo en cuenta que si el importe total supera los 1000$  se aplica un descuento del 20%.
+var montoTotalBruto= prompt('Ingrese monto total de factura') 
+if (montoTotalBruto>=1001){
+    alert('Aplica descuento!')
+    var montoTotalConDcto = montoTotalBruto*0.8
+    alert('Nuevo monto a pagar gracias el descuento: '+montoTotalConDcto)
+} else {
+    alert('No hay descuento. Monto a pagar: '+montoTotalBruto)
+}
+
+//7. Hacer un programa para obtener las comisiones por ventas de un vendedor. Los datos que se ingresan son monto vendido y
+// código de vendedor Si el código de vendedor es menor a 100 las comisiones son de un 30%, si el código esta entre 100 
+//y 200 son del 20% y si es mayor a 200 10%. Mostrar el código de vendedor, el monto vendido y el valor de las comisiones.
+     var codigoVendedor=prompt('Ingrese codigo del vendedor') 
+     var montoVendido=prompt('Ingrese monto vendido')
+    var comision
+if(codigoVendedor<=100){
+comision=montoVendido*0.3
+} else if (codigoVendedor<=200){
+    comision=montoVendido*0.2
+} else if(codigoVendedor>=201) {
+    comision=montoVendido*0.1
+}
+alert('Vendedor código: '+codigoVendedor)
+alert('Monto Vendido: '+montoVendido)
+alert('Comision: '+comision)
+
+//8. Se desea escribir los nombres de los días de la semana en función de la variable d (día)
+// introducida por teclado.  1(Lunes) – 2(martes) – 3(Miércoles)……..6(Sábado) – 7(Domingo)
+var diaSemana = prompt('Ingrese numero del 1 al 7 para saber que día de la semana es: ')
+if(diaSemana==1){
+    alert('Lunes!')
+} else if (diaSemana==2){
+    alert('Martes')
+} else if(diaSemana==3){
+    alert('Miércoles')
+} else if(diaSemana==4){
+    alert('Jueves')
+} else if (diaSemana==5){
+    alert('Viernes')
+} else if(diaSemana==6){
+    alert('Sábado')
+} else if(diaSemana==7){
+    alert('Dómingo')
+} else{
+    alert('NO INGRESASTE NUMERO DEL 1 AL 7 PEQUEÑO TRAMPOSO')
+}
+
+
+//9. Hacer un algoritmo para un programa que calcule el pago que hacen un grupo de personas para ver una película 
+//teniendo en cuenta que si el grupo es menor de 8 personas el pago es de 1.5 pesos por persona y para grupos de 8 personas 
+//o más el pago es 0.5 pesos por persona.
+var cantidadExpectadores=prompt('Ingrese cantidad de expectadores: ')
+var totalAPagar
+if (cantidadExpectadores<=7){
+totalAPagar=cantidadExpectadores*1.5
+alert('Total a pagar: '+totalAPagar)
+} else {
+totalAPagar=cantidadExpectadores*0.5    
+alert('Total a pagar: '+totalAPagar)
+}
+
+//10. Una farmacia hace el 15% de descuento a sus clientes si la compra es mayor a 100 pesos. Escribir un programa que 
+//dado el monto de una compra como valor numérico, diga cuanto debe abonar el cliente aplicando el descuento si es necesario.
+var montoFarma = prompt('Ingrese monto')
+if(montoFarma>=100){
+montoFarma=montoFarma*0.85
+alert('Aplicó descuento y abonará: '+montoFarma)
+} else {
+alert('No aplicó descuento y abonará: '+montoFarma)    
+}
+
+
